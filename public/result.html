@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Skin On Me</title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style type="text/css">
+    </style>
+</head>
+<body id="top" class="scrollspy">
+  <!-- Wide card with share menu button -->
+  <style>
+  .demo-card-wide.mdl-card {
+    width: 300px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #000;
+    height: 192px;
+    background: url('img/skincancer.jpg') center / cover;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+  </style>
+
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="margin: 50px;">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Welcome</h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Mauris sagittis pellentesque lacus eleifend lacinia...
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+        Get Started
+      </a>
+    </div>
+    <div class="mdl-card__menu">
+      <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+        <i class="material-icons">share</i>
+      </button>
+    </div>
+  </div>
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/parallax1.png"></div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Powered by <a class="white-text" href="http://www.ibm.com/cloud-computing/bluemix/?cm_mmc=search-gsn-_-branded-Bluemix-general-_-ibm%20bluemix-_-usa-bm-mkt-oww">IBM Bluemix</a>
+        </div>
+    </div>
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+    <script src="js/custom-file-input.js"></script>
+
+    <script>
+      function readURL(input) {
+              if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+
+                  reader.onload = function (e) {
+                      $('#image')
+                          .attr('src', e.target.result)
+                          .width(360)
+                          .height(248);
+                  };
+
+                  reader.readAsDataURL(input.files[0]);
+              }
+          }
+    </script>
+
+    </body>
+</html>

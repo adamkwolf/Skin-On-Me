@@ -1,0 +1,17 @@
+{"disorders":[
+    {"disorderName":"impetigo"},
+    {"description":"Impetigo is a highly contagious bacterial skin infection. It can appear anywhere on the body but usually attacks exposed areas. Children tend to get it on the face, especially around the nose and mouth, and sometimes on the arms or legs."},
+    {"website": "http://www.webmd.com/skin-problems-and-treatments/guide/understanding-impetigo-basics"}
+
+
+
+    {"disorderName":"wart"},
+    {"description":"A wart is a skin growth caused by some types of the virus called the human papillomavirus (HPV). HPV infects the top layer of skin, usually entering the body in an area of broken skin. The virus causes the top layer of skin to grow rapidly, forming a wart. Most warts go away on their own within months or years."},
+    {"website": "http://www.webmd.com/skin-problems-and-treatments/tc/warts-and-plantar-warts-topic-overview"}
+
+
+
+    {"disorderName":"skinCancer"},
+    {"description":"Most melanomas start as a new skin growth on unmarked skin. The growth may change color, shape, or size. These types of changes are an early sign that the growth is melanoma. But melanoma can also develop in an existing mole or other mark on the skin. Or it may look like a bruise that isn't healing or show up as a brown or black streak under a fingernail or toenail."},
+    {"website": "http://www.webmd.com/melanoma-skin-cancer/tc/skin-cancer-melanoma-symptoms"}
+]}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Skin On Me</title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <style type="text/css">
+    </style>
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="#" id="logo-container" class="brand-logo">Skin On Me</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <h1 class="text_h center header cd-headline letters type">
+            <span style="margin-right: px;">skin disorder prediction<br /></span>
+            <span class="cd-words-wrapper waiting">
+                <b class="is-visible">identify <br />now</b>
+                <b>early <br />prevention</b>
+                <b>get <br />treatment</b>
+            </span>
+        </h1>
+    </div>
+</div>
+
+<!--Intro and service-->
+<div id="about" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div  class="col s12">
+                <h2 class="center header text_h2">predict skin disorders through advanced visual recognition</h2>
+            </div>
+
+            <div  class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-image-photo-camera
+"></i>
+                    <h5 class="promo-caption">Upload an Image</h5>
+                    <p class="light center">In order to predict any skin disorders, we need one image in good light conditions of the affected area.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-memory"></i>
+                    <h5 class="promo-caption">Disorder Recognition</h5>
+                    <p class="light center">After the image is submitted, the visual recognition software will identify a possible skin condition.</p>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="center promo promo-example">
+                    <i class="mdi-action-done"></i>
+                    <h5 class="promo-caption">View Results</h5>
+                    <p class="light center">Results from the image recognition will be displayed with useful information provided by WebMD.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="upload">
+    <div class="container">
+        <h2 class="header text_b">Get Started </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/default.png" id="image">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Upload Image <i class="mdi-action-info-outline right"></i></span>
+                        <!--<p><a href="#">Upload Picture:</a><input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput" onchange="readURL(this);"></p>-->
+                        <div align="left">
+                          <input type="file" name="file-3[]" id="file-3" class="inputfile inputfile-3" capture="camera" accept="image/jpeg image/gif image/x-png" name="cameraInput" onchange="readURL(this);"/>
+                					<label for="file-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Choose a file&hellip;</span></label>
+                          <br />
+                          <button class="btn waves-effect waves-light" style="background-color:#2196F3 !important; margin: 10px 0px 10px 0px; align: center;" type="submit" name="action" id="analyze">Analyze<i class="mdi-content-send" style="margin-left: 15px;"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="results" style="display: none; margin: 18px; border-top: thin double #ff0000;">
+                        <h4>Result: Melanoma</h3>
+                        <p>If melanoma is recognized and treated early, it is almost always curable, but if it is not, the cancer can advance and spread to other parts of the body, where it becomes hard to treat and can be fatal.</p>
+                        <a href="http://www.webmd.com/melanoma-skin-cancer/">Go to WebMD for more info.</a>
+                    </div>
+
+                    <script>
+
+                      $("#analyze").click(function(){
+                        $(".results").show();
+                      });
+
+                    </script>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Upload Tips <i class="mdi-navigation-close right"></i></span>
+                        <p>The picture should be taken in normal light conditions with a clear background free of other objects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/parallax1.png"></div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Powered by <a class="white-text" href="http://www.ibm.com/cloud-computing/bluemix/?cm_mmc=search-gsn-_-branded-Bluemix-general-_-ibm%20bluemix-_-usa-bm-mkt-oww">IBM Bluemix</a>
+        </div>
+    </div>
+</footer>
+
+
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+    <script src="js/custom-file-input.js"></script>
+
+    <script>
+      function readURL(input) {
+              if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+
+                  reader.onload = function (e) {
+                      $('#image')
+                          .attr('src', e.target.result)
+                          .width(360)
+                          .height(248);
+                  };
+
+                  reader.readAsDataURL(input.files[0]);
+              }
+          }
+    </script>
+
+    </body>
+</html>
