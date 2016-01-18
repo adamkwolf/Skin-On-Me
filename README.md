@@ -1,17 +1,17 @@
-This README.md file is displayed on your project page. You should edit this 
-file to describe your project, including instructions for building and 
-running the project, pointers to the license under which you are making the 
-project available, and anything else you think would be useful for others to
-know.
+## Inspiration
+The inspiration for "Skin On Me" was to help identify a skin disorder some person may have but are not aware of what it actually is. This would have the potential to save many lives by catching preventable skin disorder early.
 
-We have created an empty license.txt file for you. Well, actually, it says,
-"<Replace this text with the license you've chosen for your project.>" We 
-recommend you edit this and include text for license terms under which you're
-making your code available. A good resource for open source licenses is the 
-[Open Source Initiative](http://opensource.org/).
+## What it does
+ With the application the user can easily able to identify any possible skin disorder with a degree of confidence. First, the user will take a photo of their condition under normal light conditions, then the application will process the image through IBM Watsons' Visual Recognition API to determine what the skin disorder might be. The application will return the most likely skin disorder and provide useful information to the user about where to get treatment.
+## How we built it
+We built this application using IBM Bluemix, more specifically IBM Watson APIs and services for Visual Recognition. First we created an application through Bluemix using the Internet of Things boiler plate using Node RED. With Node RED we created flows to interact with the Visual Recognition service and process our images. Results will be returned back to our web application where the user can view it.
+## Challenges we ran into
+When creating the application using Node RED with Visual Recognition(beta), we came across through many technical issue due to unavailability of proper documentation, we ran into some serious challenges, including problems encountered with the custom classifiers, which took couple hours to figure it out.
+## Accomplishments that we're proud of
+We contributed with the knowledge of functionality of IBM's latest API with filling in the loopholes in incomplete documentation and figuring out the API eventually after getting help from IBM personnel's.
 
-Be sure to update your project's profile with a short description and 
-eye-catching graphic.
+## What we learned
+We learned about IBM Bluemix products and services, mainly creating applications and using the Watson services for Visual Recognition. Additionally we gained practice of using Node RED for creating flows with IBMs services, and using Postman to test data calls. 
 
-Finally, consider defining some sprints and work items in Track & Plan to give 
-interested developers a sense of your cadence and upcoming enhancements.
+## What's next for Skin On Me
+We intend to get Watson to work as intended, currently waiting on updates to Node RED before we can continue. 
